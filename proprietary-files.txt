@@ -3533,8 +3533,6 @@ vendor/bin/init.qti.kernel.debug-pineapple.sh
 vendor/bin/init.qti.kernel.debug.sh
 vendor/bin/init.qti.kernel.early_debug-pineapple.sh
 vendor/bin/init.qti.kernel.early_debug.sh
-vendor/bin/ipacm
-vendor/bin/ipacm-diag
 vendor/bin/iperf
 vendor/bin/iperf3
 vendor/bin/iperf3.zc
@@ -3634,8 +3632,6 @@ vendor/etc/init/init.qlm-service.rc
 vendor/etc/init/init.qti.fm.rc
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/init.vendor.wlan.rc
-vendor/etc/init/ipacm-diag.rc
-vendor/etc/init/ipacm.rc
 vendor/etc/init/minidump.rc
 vendor/etc/init/nicmd.rc
 vendor/etc/init/qseecomd.rc
