@@ -3655,7 +3655,6 @@ vendor/etc/init/vendor.mbnota.rc
 vendor/etc/init/vendor.qsap.location.rc
 vendor/etc/init/vendor.qsap.qapeservice.rc
 vendor/etc/init/vendor.qsap.sensors.rc
-vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.factory-service.rc
