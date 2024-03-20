@@ -14,6 +14,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from houji device.
 $(call inherit-product, device/xiaomi/houji/device.mk)
 
+# Boot Animation
+TARGET_SCREEN_HEIGHT := 2670
+TARGET_SCREEN_WIDTH := 1200
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOTANIMATION_HALF_RES := true
+
 ## Device identifier
 PRODUCT_DEVICE := houji
 PRODUCT_NAME := lineage_houji
