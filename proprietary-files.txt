@@ -322,11 +322,6 @@ vendor/lib64/soundfx/libswvqe.so
 vendor/lib64/soundfx/libvisualizer.so
 vendor/lib64/soundfx/libvolumelistener.so
 
-# Authsecret
-vendor/bin/hw/android.hardware.authsecret-service.nxp
-vendor/etc/init/android.hardware.authsecret-service.nxp.rc
-vendor/etc/vintf/manifest/android.hardware.authsecret-service.nxp.xml
-
 # Batterysecret
 vendor/bin/batterysecret
 vendor/etc/init/hw/init.batterysecret.rc
@@ -2077,11 +2072,8 @@ vendor/lib64/libqtikeymaster4.so
 
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service-qti
-vendor/bin/hw/android.hardware.security.keymint-service.strongbox-nxp
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
-vendor/etc/init/android.hardware.security.keymint-service.strongbox-nxp.rc
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
-vendor/etc/vintf/manifest/android.hardware.security.sharedsecret3-service.strongbox-nxp.xml
 vendor/lib64/libqtikeymint.so
 
 # Limits
@@ -3523,7 +3515,6 @@ vendor/bin/hal_proxy_daemon
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
 vendor/bin/hw/android.hardware.cas-service.example
-vendor/bin/hw/android.hardware.weaver-service.nxp
 vendor/bin/hw/capabilityconfigstoretest
 vendor/bin/hwinfo
 vendor/bin/hw/mfp-daemon
@@ -3624,7 +3615,6 @@ vendor/etc/excluded-input-devices.xml
 vendor/etc/Hapticsconfig.xml
 vendor/etc/hrtf5c.bin
 vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
-vendor/etc/init/android.hardware.weaver-service.nxp.rc
 vendor/etc/init/cas-default.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/etc/init/dcfd.rc
@@ -3698,7 +3688,6 @@ vendor/etc/spr_cfg_xiaomi_n3_42_0d_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/tzlog.dict
 vendor/etc/vintf/manifest/AHBF-V3-service.xml
 vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
-vendor/etc/vintf/manifest/android.hardware.weaver-service.nxp.xml
 vendor/etc/vintf/manifest/atfwd-saidl.xml
 vendor/etc/vintf/manifest/bluetooth_audio.xml
 vendor/etc/vintf/manifest/datafactoryservice-saidl.xml
@@ -3735,7 +3724,6 @@ vendor/lib64/android.hardware.ir-V1-ndk.so
 vendor/lib64/android.hardware.media.bufferpool2-V1-ndk.so
 vendor/lib64/android.hardware.radio.sap-V1-ndk.so
 vendor/lib64/android.hardware.tetheroffload-V1-ndk.so
-vendor/lib64/android.hardware.weaver-V2-ndk.so
 vendor/lib64/android.media.audio.common.types-V2-ndk.so
 vendor/lib64/android.system.wifi.keystore@1.0.so
 vendor/lib64/ese_weaver.so
@@ -3809,8 +3797,6 @@ vendor/lib64/libhidparser.so
 vendor/lib64/libhotword_intf.so
 vendor/lib64/libiccprofile.so
 vendor/lib64/libipanat.so
-vendor/lib64/libjc_keymint_nxp.so
-vendor/lib64/libjc_keymint_transport_nxp.so
 vendor/lib64/libjnihelper.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
