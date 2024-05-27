@@ -3385,6 +3385,7 @@ vendor/firmware/vpu33_4v.mbn
 vendor/firmware/vpu33_4v_unsigned.mbn
 
 # Widevine DRM
+vendor/apex/com.google.android.widevine.nonupdatable.apex
 vendor/etc/vintf/manifest/android.hardware.drm-service.xml
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
