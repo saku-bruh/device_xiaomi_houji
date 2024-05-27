@@ -1472,7 +1472,6 @@ vendor/lib64/libipebpsstriping480.so
 vendor/lib64/libisphwsetting.so
 vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
-vendor/lib64/libmemunreachable.so
 vendor/lib64/libmfec.so
 vendor/lib64/libmfGhostDetection.so
 vendor/lib64/libmialgo_ai_vision.so
@@ -2064,7 +2063,6 @@ vendor/etc/init/hw/init.qti.kernel.rc
 
 # Keymaster
 vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymaster_portable.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqcbor.so
@@ -2209,6 +2207,7 @@ vendor/lib64/vendor.xiaomi.hardware.aidl.tidaservice-V1-ndk_platform.so
 vendor/etc/public.libraries.txt
 
 # NFC
+system_ext/etc/permissions/com.nxp.nfc.nq.xml
 odm/etc/libnfc-nci.conf
 odm/etc/libnfc-nxp_RF.conf
 odm/etc/libnfc-nxp.conf
@@ -2254,8 +2253,6 @@ vendor/lib64/libvui_dmgr.so
 vendor/lib64/libvui_intf.so
 vendor/lib64/nfc_nci.nqx.default.hw.so
 vendor/lib64/vendor.nxp.hardware.nfc@2.0.so
-vendor/lib64/vendor.nxp.nxpese@1.0.so
-vendor/lib64/vendor.nxp.nxpnfc_aidl-V1-ndk.so
 
 # OMX
 vendor/lib64/libAlacSwDec.so
@@ -3137,6 +3134,10 @@ vendor/lib64/vendor.qti.hardware.trustedui@1.2.so
 # Trustzone
 vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 
+# UUID
+vendor/etc/hal_uuid_map_houji.xml
+vendor/etc/hal_uuid_map_houjiin.xml
+
 # USB
 vendor/bin/init.qcom.usb.sh
 vendor/etc/init/hw/init.qcom.usb.rc
@@ -3666,7 +3667,6 @@ vendor/etc/media_codecs_dolby_audio.xml
 vendor/etc/mem_logger_config.xml
 vendor/etc/misound_asc_model.tflite
 vendor/etc/nfcon.pnscr
-vendor/etc/permissions/android.hardware.hardware_keystore.jc-strongbox-keymint3-nxp.xml
 vendor/etc/permissions/privapp-permissions-qti-vendor.xml
 vendor/etc/permissions/qti_fingerprint_interface.xml
 vendor/etc/permissions/vendor.qti.dcf.xml
@@ -3756,7 +3756,6 @@ vendor/lib64/libcodec2_soft_ac4dec.so
 vendor/lib64/libcodec2_soft_ddpdec.so
 vendor/lib64/libcodec2_store_dolby.so
 vendor/lib64/libcpion.so
-vendor/lib64/libcppbor_external.so
 vendor/lib64/libcppcose_rkp.so
 vendor/lib64/libcustomva_intf.so
 vendor/lib64/libdapparamstorage.so
@@ -3892,7 +3891,6 @@ vendor/lib64/libsamplefilterplugin.so
 vendor/lib64/libsfeShiftExtrapolation.so
 vendor/lib64/libsgutils2.so
 vendor/lib64/libsnpe_config.so
-vendor/lib64/libsoft_attestation_cert.so
 vendor/lib64/libsparse.so
 vendor/lib64/libspatializerparamstorage.so
 vendor/lib64/libspl.so
