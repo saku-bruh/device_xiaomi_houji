@@ -1843,6 +1843,7 @@ vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libhdrvivid.so
 
 # Display HWC
+vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/bin/hw/vendor.qti.hardware.display.allocator-service
 vendor/bin/qdcmss
 vendor/bin/ubwcconvert
@@ -1864,6 +1865,9 @@ vendor/lib64/libsdmdal.so
 vendor/lib64/libsdmutils.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
+vendor/lib64/vendor.qti.hardware.display.allocator@1.0.so
+vendor/lib64/vendor.qti.hardware.display.allocator@3.0.so
+vendor/lib64/vendor.qti.hardware.display.allocator@4.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Display postprocessing
