@@ -3971,7 +3971,6 @@ vendor/lib64/vendor.qti.qegahal-impl.so
 vendor/lib64/vendor.qti.qegahal-V1-ndk_platform.so
 vendor/lib64/vendor.qti.qvirt-V1-ndk.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
-vendor/overlay/SecureElementResTarget_Vendor.apk
 vendor/overlay/WifiResMainlineTarget.apk
 vendor/overlay/WifiResMainlineTarget_spf.apk
 vendor/overlay/WifiResTarget.apk
