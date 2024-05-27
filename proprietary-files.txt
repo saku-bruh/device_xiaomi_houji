@@ -328,14 +328,14 @@ vendor/etc/vintf/manifest/bttpi-saidl.xml
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:vendor/lib64/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so:vendor/lib64/android.hardware.bluetooth@1.1-impl-qti.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bttpi-impl.so
+vendor/lib64/hw/vendor.qti.hardware.bttpi-impl.so:vendor/lib64/vendor.qti.hardware.bttpi-impl.so
 vendor/lib64/lib_bt_aptx.so
 vendor/lib64/lib_bt_ble.so
 vendor/lib64/lib_bt_bundle.so
@@ -1930,7 +1930,7 @@ vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service-qti
 vendor/etc/init/android.hardware.gatekeeper-service-qti.rc
-vendor/lib64/hw/libqtigatekeeper.so
+vendor/lib64/hw/libqtigatekeeper.so:vendor/lib64/libqtigatekeeper.so
 
 # Graphics
 vendor/app/com.qualcomm.qti.gpudrivers.pineapple.api34/com.qualcomm.qti.gpudrivers.pineapple.api34.apk
@@ -1998,7 +1998,7 @@ vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
 vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
 vendor/etc/xtwifi.conf
-vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
+vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so:vendor/lib64/android.hardware.gnss-aidl-impl-qti.so
 vendor/lib64/libbatching.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libcdfw.so
@@ -2848,7 +2848,7 @@ vendor/lib64/libnative-api.so
 vendor/bin/hw/android.hardware.secure_element-service.qti
 vendor/etc/init/android.hardware.secure_element-service.qti.rc
 vendor/etc/vintf/manifest/android.hardware.secure_element.xml
-vendor/lib64/hw/libEseUtils.so
+vendor/lib64/hw/libEseUtils.so:vendor/lib64/libEseUtils.so
 vendor/lib64/android.se.omapi-V1-ndk.so
 vendor/lib64/libesesbprovision.so
 vendor/lib64/libGPQeSE.so
@@ -3734,9 +3734,9 @@ vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/local_time.default.so
 vendor/lib64/hw/power.default.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:vendor/lib64/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.wifidisplaysession@1.0-impl.so
-vendor/lib64/hw/vendor.qti.memory.pasrmanager-impl.so
+vendor/lib64/hw/vendor.qti.memory.pasrmanager-impl.so:vendor/lib64/vendor.qti.memory.pasrmanager-impl.so
 vendor/lib64/hw/vibrator.default.so
 vendor/lib64/libalsautils.so
 vendor/lib64/lib_android_keymaster_keymint_utils.so
