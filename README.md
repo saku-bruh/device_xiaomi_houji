@@ -1,27 +1,25 @@
-#  Device Tree for Xiaomi 14 (houji)
+# Device Tree for the Xiaomi 14
 
-## Spec Sheet
+The Xiaomi 14 (Codenamed "houji") is a flagship smartphone from Xiaomi released in November 2023.
 
-| Feature                 | Specification                                                              |
-| :---------------------- | :--------------------------------                                          |
-| CPU                     | 1x3.3 GHz Cortex-X4 & 3x3.2 GHz Cortex-A720 & 2x3.0 GHz Cortex-A720 & 2x2.3 GHz Cortex-A520|
-| Chipset                 | Qualcomm SM8650-AB Snapdragon 8 Gen 3 (4 nm)                                      |
-| GPU                     | Adreno 750                                                                 |
-| Memory                  | 8 GB / 12 GB / 16 GB                                                                |
-| Shipped Software        | Android 14, HyperOS                                                        |
-| Storage                 | 256 GB / 512 GB / 1 TB                                                           |
-| Battery                 | 4610 mAh                                                                   |
-| Dimensions              | 152.8 x 71.5 x 8.2 mm or 8.3 mm                               |
-| Display                 | 6.36 inches, 97.6 cm2 (~89.3% screen-to-body ratio)                       |
-| Rear Camera             | 50 MP, f/1.6, 23mm (wide), 1/1.31", 1.2µm, dual pixel PDAF, Laser AF, OIS                            |
-|                         | 50 MP, f/2.0, 75mm (telephoto), PDAF (10cm - ∞), OIS, 3.2x optical zoom                                     |
-|                         | 50 MP, f/2.2, 14mm, 115˚ (ultrawide)                                                   |
-| Front Camera            | 32 MP, f/2.0, 22mm (wide), 0.7µm                                            |
-| Release Date            | October 2023                                                               |
+## Device Specifications
+
+| Feature                 | Specification                                                                                           |
+| :---------------------- | :-------------------------------------------------------------------------------------------------------|
+| Chipset                 | Snapdragon® 8 Gen 3 (SM8650-AB)                                                                         |
+| CPU                     | Octa-core (1x3.3 GHz Cortex-X4 & 3x3.2 GHz Cortex-A720 & 2x3.0 GHz Cortex-A720 & 2x2.3 GHz Cortex-A520) |
+| GPU                     | Adreno 750                                                                                              |
+| Memory                  | 8/12/16 GB LPDDR5X RAM                                                                                  |
+| Shipped Android Version | 14                                                                                                      |
+| Storage                 | 256/512 GB UFS 4.0                                                                                      |
+| SIM                     | Dual SIM (2x Nano-SIMs, 1x eSIM)                                                                        |
+| Battery                 | 4610 mAh Li-Po (Non-Removable), 90W Wired Fast Charging, 50W Wireless Fast Charging                     |
+| Dimensions              | 152.8 x 71.5 x 8.3 mm (5.98 x 2.81 x 0.32 in)                                                           |
+| Display                 | 6.36 inch, 1200 x 2670 pixels, LTPO OLED, HDR10, HDR10+, 120Hz, Dolby Vision                            |
+| Camera                  | 50 MP (Main), 50 MP (Wide), 50 MP (Telephoto), 32 MP (Front)                                            |
+| Fingerprint             | Front-Mounted (Under Display, Optical)                                                                  |
+| Sensors                 | Accelerometer, Gyro, Proximity, Barometer, Compass, Color Spectrum                                      |
 
 ## Device Picture
 
-![Xiaomi 14](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1698307643.47797553.png)
-![Xiaomi 14](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1698307643.47369771.png)
-![Xiaomi 14](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1698307643.50924527.png)
-![Xiaomi 14](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1698307643.55548339.png)
+![Xiaomi 14](https://i.imgur.com/6XO8tZF.png)
