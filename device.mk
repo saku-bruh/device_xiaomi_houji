@@ -289,6 +289,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     FrameworksResTargetHouji \
     SettingsResCommon \
+    XiaomiHoujiSettingsProviderOverlay \
     SystemUIResCommon \
     SystemUIResCommonHouji \
     WifiResTarget

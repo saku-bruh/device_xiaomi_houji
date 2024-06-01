@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Indicate the prefix of wifi p2p device name, the length should be between 1 ~ 28. -->
+    <string name="config_wifiP2pDeviceNamePrefix">Xiaomi 14_</string>
+
+    <!-- Do not translate. Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default">Xiaomi 14</string>
+</resources>

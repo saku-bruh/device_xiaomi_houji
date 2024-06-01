@@ -1,3 +1,6 @@
+# Bluetooth
+bluetooth.device.default_name=Xiaomi 14
+
 # Camera
 camera.disable_zsl_mode=true
 ro.camera.enableCamera1MaxZsl=1
