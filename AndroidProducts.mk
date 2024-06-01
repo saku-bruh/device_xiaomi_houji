@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_houji.mk
+    $(LOCAL_DIR)/aosp_houji.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_houji-eng \
-    lineage_houji-userdebug \
-    lineage_houji-user
+    aosp_houji-eng \
+    aosp_houji-userdebug \
+    aosp_houji-user
