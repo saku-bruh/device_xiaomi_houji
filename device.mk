@@ -283,8 +283,19 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
+# Overlay Packages
 PRODUCT_PACKAGES += \
-    SecureElementResTarget
+    SecureElementResTarget \
+    CarrierConfigResCommon \
+    FrameworksResTarget \
+    FrameworksResTargetHouji \
+    SettingsResCommon \
+    SystemUIResCommon \
+    SystemUIResCommonHouji \
+    WifiResTarget
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
