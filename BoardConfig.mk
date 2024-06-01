@@ -44,7 +44,7 @@ TARGET_OTA_ASSERT_DEVICE := houji,23127PN0CC,23127PN0CG
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
-# Boot control
+# Boot Control
 SOONG_CONFIG_NAMESPACES += ufsbsg
 SOONG_CONFIG_ufsbsg += ufsframework
 SOONG_CONFIG_ufsbsg_ufsframework := bsg
@@ -53,8 +53,8 @@ SOONG_CONFIG_ufsbsg_ufsframework := bsg
 TARGET_BOOTLOADER_BOARD_NAME := pineapple
 TARGET_NO_BOOTLOADER := true
 
-# Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+# FileSystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/filesystem/config.fs
 
 # Display
 TARGET_SCREEN_DENSITY := 480
@@ -67,7 +67,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_houji
 BOARD_INIT_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
-# Dtb/o
+# DTB/O
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 
@@ -99,7 +99,7 @@ TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 PRODUCT_COPY_FILES += \
 	$(KERNEL_PATH)/kernel:kernel
 
-# Kernel modules
+# Kernel Modules
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_ramdisk/modules.load))
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(KERNEL_PATH)/vendor_ramdisk/modules.blocklist
 
@@ -142,14 +142,14 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := pineapple
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/properties/system_ext.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/props/system_ext.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/configs/power/power-mode.cpp
 
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
@@ -167,9 +167,21 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
-# Security patch level
-BOOT_SECURITY_PATCH := 2024-02-29
-VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
+# SELinux Neverallows
+ifdef SELINUX_IGNORE_NEVERALLOWS
+else
+ifeq ($(TARGET_BUILD_VARIANT),userdebug)
+SELINUX_IGNORE_NEVERALLOWS := true
+endif
+
+ifeq ($(TARGET_BUILD_VARIANT),eng)
+SELINUX_IGNORE_NEVERALLOWS := true
+endif
+endif
+
+# Security Patch Level
+BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # VINTF
 DEVICE_MANIFEST_SKUS := pineapple
@@ -211,7 +223,7 @@ BOARD_AVB_VENDOR_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 BOARD_AVB_VENDOR_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 BOARD_AVB_ODM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 
-# WiFi
+# Wi-Fi
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
@@ -226,5 +238,5 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-# Inherit from the proprietary version
--include vendor/xiaomi/houji/BoardConfigVendor.mk
+# Inherit from the Vendor
+include vendor/xiaomi/houji/BoardConfigVendor.mk
